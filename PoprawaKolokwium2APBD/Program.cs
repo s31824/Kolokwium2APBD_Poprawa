@@ -16,7 +16,7 @@ public class Program
         builder.Services.AddDbContext<DatabaseContext>(options => 
             options.UseSqlServer(builder.Configuration.GetConnectionString("Default"))
         );
-        builder.Services.AddScoped<IDbService, DbService>();
+        builder.Services.AddScoped<ICharacterService,CharacterService>();
 
         
         // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
